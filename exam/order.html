@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería lokistokis - Ordena Ahora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzería lokistokis</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="order.html" class="active">Ordena Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Menú de Pizzas</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ingredientes</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Margarita</td>
+                        <td>Tomate, mozzarella, albahaca</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pepperoni</td>
+                        <td>Tomate, mozzarella, pepperoni</td>
+                        <td>$9.50</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetariana</td>
+                        <td>Tomate, mozzarella, champiñones, pimientos, aceitunas</td>
+                        <td>$9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cuatro Quesos</td>
+                        <td>Mozzarella, gorgonzola, parmesano, provolone</td>
+                        <td>$10.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulario de Pedido</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre-completo">Nombre completo:</label>
+                    <input type="text" id="nombre-completo" name="nombre-completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <textarea id="direccion" name="direccion" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Tamaño de la pizza:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="tamano" value="pequeña"> Pequeña</label>
+                        <label><input type="radio" name="tamano" value="mediana"> Mediana</label>
+                        <label><input type="radio" name="tamano" value="grande"> Grande</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ingredientes adicionales:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="ingredientes" value="queso"> Queso extra</label>
+                        <label><input type="checkbox" name="ingredientes" value="pepperoni"> Pepperoni</label>
+                        <label><input type="checkbox" name="ingredientes" value="champiñones"> Champiñones</label>
+                        <label><input type="checkbox" name="ingredientes" value="aceitunas"> Aceitunas</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Pizzería lokistokis</p>
+    </footer>
+</body>
+</html>
